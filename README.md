@@ -510,5 +510,3 @@ For questions or issues, please open an issue on the repository.
 
 ---
 
-**Note**: This project is part of an academic deep learning capstone project. For detailed technical information, see `Academic_Project_Report.md`.
-
