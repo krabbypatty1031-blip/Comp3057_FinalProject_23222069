@@ -67,18 +67,17 @@ cd Musify
 
 ### ⚠️ Important: Model Setup
 
-Due to GitHub's file size limits, the pre-trained large model weights (specifically for GPT-2 Lyrics Generation) are **NOT** included in this repository. You must generate them locally before running the application.
+The repository includes the lightweight models for classification and melody generation, but **excludes** the large fine-tuned GPT-2 lyrics model due to file size limits.
 
-**To generate the required models:**
+**How to handle this:**
 
-1.  **Lyrics Generation Model**:
-    *   Open `Lyrics Generation/GPT2_Lyrics_Service.ipynb`
-    *   Run all cells to fine-tune the model.
-    *   This will generate the necessary model files in `models/gpt2_lyrics/` and `models/gpt2_lyrics_backend/`.
-
-2.  **Other Models**:
-    *   The `music_generator_final.keras` and `song_classification_model.keras` are included in the repository.
-    *   If you wish to retrain them, you can use `Music Generation/Music_Generation.ipynb` and `Song Classification/Song_Classification.ipynb`.
+1.  **Recommended (For best results):**
+    *   Open `Lyrics Generation/GPT2_Lyrics_Service.ipynb`.
+    *   Run all cells. This will automatically download the base GPT-2 model, fine-tune it on the dataset, and save the optimized weights to your local `models/` folder.
+    
+2.  **Fallback:**
+    *   If you skip step 1, the backend will automatically download and use the standard base `gpt2` model from Hugging Face.
+    *   The application will still work, but the generated lyrics style may differ from the project's intended output.
 
 ### Step 2: Backend Setup
 
