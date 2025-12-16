@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+env/
+
+# Node/Frontend
+node_modules/
+dist/
+.DS_Store
+
+# Large Model Files
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.h5
+
+# Checkpoints
+checkpoint-*/
+
+# Output
+output/
+.cache/
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,13 @@
+fastapi>=0.104.0
+uvicorn>=0.24.0
+tensorflow>=2.16.0
+torch>=2.2.0
+transformers>=4.30.0
+numpy>=1.26.0
+pandas>=2.1.0
+librosa>=0.10.0
+pretty_midi>=0.2.10
+python-multipart>=0.0.6
+pydantic>=2.5.0
+scipy>=1.11.0
+soundfile>=0.12.0
